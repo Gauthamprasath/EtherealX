@@ -7,7 +7,7 @@ Usage:
 I have just put the .txt only. In order to work around it, save it as .bat to execute as a batch file. You can also use some BAT converters to create a .exe out of it.
 
 
-!!!This is just a glimpse of the project and I haven't put every details here. I would personally recommd you to go through the script and understand each line and what they intend to do.!!!
+!!!This is just a glimpse of the project and I haven't put every details here. I would personally recommend you to go through the script and understand each line and what they intend to do!!!
 
 
 Functionalities:
