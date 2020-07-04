@@ -1,4 +1,4 @@
-# Malware8.1
+# EtherealX
 Windows Malware || A malware with lots of features!! and with backdoor. DO NOT MISUSE!! USE FOR EDUCATIONAL PURPOSE ONLY!!
 Avast-64-bit ----> This is just a name given. It is not representing any product or company.
 This is a simple malware created using batch script. 
