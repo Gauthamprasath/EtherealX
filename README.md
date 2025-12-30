@@ -1,7 +1,6 @@
 # EtherealX
-Windows Malware || A malware with lots of features!! and with backdoor. DO NOT MISUSE!! USE FOR EDUCATIONAL PURPOSE ONLY!!
+Windows Security || A windows based penetration tesitng tool with lots of features and with backdoor. DO NOT MISUSE!! USE FOR EDUCATIONAL PURPOSE ONLY!!
 Avast-64-bit ----> This is just a name given. It is not representing any product or company.
-This is a simple malware created using batch script. 
 
 Usage:
 I have just put the .txt only. In order to work around it, save it as .bat to execute as a batch file. You can also use some BAT converters to create a .exe out of it.
@@ -34,3 +33,4 @@ A backdoor is installed. So you can have remote access.
 
 
 You can use your favourable backdoor. Just host the server of the backdoor on your ftp server, and change the link where I have put my server address. I'm not disclosing the backdoor name here.
+
