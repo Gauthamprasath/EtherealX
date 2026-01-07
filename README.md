@@ -14,7 +14,7 @@ It copies Chrome cookies, SAM and SYSTEM files to location.(You can refer the fi
 If you run it from a USB drive, these are copied to your USB also.
 Installs a Keylogger.
 Installs a Backdoor.
-The backdoor and the keylogger is downloaded from my server when the malware is executed. You can refer the keylogger. The backdoor which gets installed is only the server. And the client for this server is configured by me when this malware was programmed.
+The backdoor and the keylogger is downloaded from my server when the tool is executed. You can refer the keylogger. The backdoor which gets installed is only the server. And the client for this server is configured by me when this tool was programmed.
 Creates a User account named Admin.
 This account is give administrators rights.
 The account is made hidden so it wont be visible in the windows login screen.
@@ -33,4 +33,5 @@ A backdoor is installed. So you can have remote access.
 
 
 You can use your favourable backdoor. Just host the server of the backdoor on your ftp server, and change the link where I have put my server address. I'm not disclosing the backdoor name here.
+
 
